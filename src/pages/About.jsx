@@ -4,7 +4,7 @@ function About() {
   return (
     <section className="relative max-w-5xl mx-auto px-4 sm:px-8 lg:px-8 py-6">
       {/* Heading */}
-      <h2 className="text-3xl sm:text-4xl font-bold text-black dark:text-white mb-6 text-center sm:text-left">
+      <h2 className="text-3xl sm:text-3xl font-bold text-black dark:text-white mb-6 text-center sm:text-left">
         About Me
       </h2>
 

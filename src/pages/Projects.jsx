@@ -41,7 +41,7 @@ function Projects() {
   ];
 
   return (
-    <div className="flex flex-col gap-6 pb-6">
+    <div className="flex flex-col gap-6 pb-6 mt-2">
       {projectList.map((project, index) => (
         <ProjectCard key={index} {...project} />
       ))}

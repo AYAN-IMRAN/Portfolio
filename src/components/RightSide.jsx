@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 function RightSide() {
   return (
     <div
-      className="flex flex-col w-full p-4
+      className="flex flex-col w-full
                  bg-gray-100 dark:bg-[#0A0A0A] 
                  border rounded-md border-gray-200 dark:border-[#262626]
                  min-h-screen lg:min-h-0 lg:h-full"
@@ -14,14 +14,14 @@ function RightSide() {
       <div
         className="sticky top-0 z-20 
                    bg-gray-100 dark:bg-[#0A0A0A] 
-                   border-b border-gray-200 dark:border-[#262626]"
+                   border-b border-gray-200 dark:border-[#262626] border-none"
       >
         <Navbar />
       </div>
 
       {/* Content */}
       <div
-        className="flex-1 p-6 
+        className="flex-1 px-3 sm:px-4 lg:px-6 py-6
                    overflow-y-auto
                    lg:h-[calc(95vh-64px)] lg:overflow-y-auto custom-scrollbar"
       >

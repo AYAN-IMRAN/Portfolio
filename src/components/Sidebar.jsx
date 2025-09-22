@@ -8,7 +8,7 @@ function Sidebar() {
   return (
     <aside
       className="w-full flex flex-col p-4 sm:p-6 
-                 bg-white/80 dark:bg-[#0A0A0A]/95 
+                 bg-white/80 dark:bg-transparent 
                  border rounded-md border-gray-200/60 dark:border-[#262626] 
                  backdrop-blur-sm
                  h-auto lg:h-full"
@@ -16,14 +16,18 @@ function Sidebar() {
       <div className="flex flex-col space-y-6 sm:space-y-8">
         {/* Tagline + Theme Toggle */}
         <div className="flex items-center justify-between flex-wrap gap-2">
-          <p className="text-xs sm:text-sm font-normal tracking-wide 
-                        text-gray-500 dark:text-gray-400">
+          <p
+            className="text-xs sm:text-sm font-normal tracking-wide 
+                        text-gray-500 dark:text-gray-400"
+          >
             Bringing Ideas to Reality ✨
           </p>
 
-          <div className="p-1.5 sm:p-2 rounded-full cursor-pointer 
+          <div
+            className="p-1.5 sm:p-2 rounded-full cursor-pointer 
                           hover:bg-gray-200/70 dark:hover:bg-[#1a1a1a] 
-                          transition">
+                          transition"
+          >
             <ThemeToggle />
           </div>
         </div>
@@ -41,7 +45,9 @@ function Sidebar() {
 
           <p className="mt-3 sm:mt-4 text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed">
             I’m Ayan Imran, a passionate{" "}
-            <span className="dark:text-white font-bold">Full Stack Engineer</span>{" "}
+            <span className="dark:text-white font-bold">
+              Full Stack Engineer
+            </span>{" "}
             and modern web developer. I love building sleek, high-performance
             applications with clean design, scalable architecture, and seamless
             user experiences.
@@ -63,29 +69,51 @@ function Sidebar() {
           <Buttons text={"Resume"} />
           <Buttons icon={<Github size={16} />} link="https://github.com/" />
           <Buttons icon={<Linkedin size={16} />} link="https://linkedin.com/" />
-          <Buttons icon={<Instagram size={16} />} link="https://instagram.com/" />
-          <Buttons icon={<Mail size={16} />} link="mailto:someone@example.com" />
+          <Buttons
+            icon={<Instagram size={16} />}
+            link="https://instagram.com/"
+          />
+          <Buttons
+            icon={<Mail size={16} />}
+            link="mailto:someone@example.com"
+          />
         </div>
 
         {/* Core Skills */}
         <div className="pt-4 sm:pt-6 border-t border-gray-200 dark:border-gray-700">
-          <h4 className="text-base sm:text-lg font-semibold text-gray-900 dark:text-gray-200">
+          <h4 className="text-base sm:text-lg font-semibold text-gray-900 dark:text-white">
             Core Skills
           </h4>
-          <p className="mt-2 text-xs sm:text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-            <span className="font-bold">Frontend:</span>{" "}
-            <span className="font-normal">HTML, CSS, JavaScript, React.js, Next.js</span>
+          <p className="mt-2 text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+            <span className="font-semibold text-gray-900 dark:text-gray-100">
+              Frontend:
+            </span>{" "}
+            <span className="font-normal">
+              HTML, CSS, JavaScript, React.js, Next.js
+            </span>
             <br />
-            <span className="font-bold">Animation:</span>{" "}
-            <span className="font-normal">GSAP, Locomotive, Lenis, Barba.js</span>
+            <span className="font-semibold text-gray-900 dark:text-gray-100">
+              Animation:
+            </span>{" "}
+            <span className="font-normal">
+              GSAP, Locomotive, Lenis, Barba.js
+            </span>
             <br />
-            <span className="font-bold">Backend:</span>{" "}
+            <span className="font-semibold text-gray-900 dark:text-gray-100">
+              Backend:
+            </span>{" "}
             <span className="font-normal">Node.js, Express, MongoDB</span>
             <br />
-            <span className="font-bold">Advanced:</span>{" "}
-            <span className="font-normal">TypeScript, PostgreSQL, Prisma, Auth</span>
+            <span className="font-semibold text-gray-900 dark:text-gray-100">
+              Advanced:
+            </span>{" "}
+            <span className="font-normal">
+              TypeScript, PostgreSQL, Prisma, Auth
+            </span>
             <br />
-            <span className="font-bold">DevOps:</span>{" "}
+            <span className="font-semibold text-gray-900 dark:text-gray-100">
+              DevOps:
+            </span>{" "}
             <span className="font-normal">Docker, Vercel, Netlify, CI/CD</span>
           </p>
         </div>

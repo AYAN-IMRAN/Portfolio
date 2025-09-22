@@ -2,14 +2,14 @@ import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const navItems = [
-    { name: "About", path: "/about" },
     { name: "Projects", path: "/projects" },
+    { name: "About", path: "/about" },
     { name: "Skills", path: "/skills" },
     { name: "Experience", path: "/experience" },
   ];
 
   return (
-    <div className="flex items-center justify-center gap-2 bg-white dark:bg-[#0A0A0A] px-4 py-1 rounded-xl shadow-inner border border-gray-200 dark:border-[#262626]">
+    <div className="flex items-center justify-center gap-2 bg-white dark:bg-[#0A0A0A] px-4 py-2  shadow-inner border border-gray-200 dark:border-[#262626]">
       {navItems.map((item) => (
         <NavLink
           key={item.name}

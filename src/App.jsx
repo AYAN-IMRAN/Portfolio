@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import RightSide from "./components/RightSide";
 import Projects from "./pages/Projects";
@@ -11,7 +16,7 @@ function App() {
     <Router>
       {/* Full Screen Container */}
       <div
-        className="flex justify-center items-center w-screen min-h-screen
+        className="flex justify-center items-center w-screen min-h-screen py-2
                    font-sans rounded-md
                    bg-white dark:bg-[#0A0A0A] 
                    text-gray-900 dark:text-gray-100 
@@ -38,10 +43,9 @@ function App() {
           <div className="w-full lg:w-3/5 h-auto lg:h-full">
             <Routes>
               <Route element={<RightSide />}>
-                
-                <Route path="/" element={<Navigate to="/about" />} />
-                <Route path="/about" element={<About />} />
+                <Route path="/" element={<Navigate to="/projects" />} />
                 <Route path="/projects" element={<Projects />} />
+                <Route path="/about" element={<About />} />
                 <Route path="/skills" element={<Skills />} />
                 <Route path="/experience" element={<Experience />} />
               </Route>
